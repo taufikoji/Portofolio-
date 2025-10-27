@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #111;
+  color: #eee;
+  line-height: 1.6;
+}
+
+header.hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(64, 0, 0, 0.7);
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.hero h2 {
+  font-weight: 300;
+  color: #ffcccc;
+  margin: 0.5rem 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background: #800000;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #a00000;
+}
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section.dark {
+  background: #1a1a1a;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skill {
+  background: #800000;
+  padding: 1rem;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #1c1c1c;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background: #262626;
+}
+
+.contact-links {
+  margin-top: 1.5rem;
+}
+
+.contact-links a {
+  color: #ffcccc;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-links a:hover {
+  color: #ffffff;
+}
+
+footer {
+  background: #800000;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
