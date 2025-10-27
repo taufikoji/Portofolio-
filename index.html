@@ -1,74 +1,101 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Taofik Faoji</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taofik Faoji — Full Stack & AI Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Futuristic Navigation -->
+  <nav class="navbar">
+    <div class="logo">TF<span>•</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#skills">Keahlian</a></li>
+      <li><a href="#portfolio">Proyek</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
   <header class="hero">
-    <div class="overlay"></div>
+    <div class="bg-circuits"></div>
     <div class="hero-content">
-      <h1>Taofik Faoji</h1>
-      <h2></h2>
-      <p>Membangun sistem web modern berbasis AI dan solusi digital efisien.</p>
+      <h1 class="glow">Taofik Faoji</h1>
+      <h2 class="typing" id="typing"></h2>
+      <p class="subtitle">Membangun sistem web cerdas berbasis AI dan solusi digital masa depan.</p>
       <a href="#contact" class="btn">Hubungi Saya</a>
     </div>
+    <canvas id="particleCanvas"></canvas>
   </header>
 
-  <section id="about" class="section">
-    <h2>Tentang Saya</h2>
+  <!-- About -->
+  <section id="about" class="section about">
+    <div class="section-title">
+      <h2>Tentang Saya</h2>
+    </div>
     <p>
-      Saya seorang pengembang web dengan fokus pada pengembangan aplikasi modern
-      yang menggabungkan kecerdasan buatan, performa tinggi, dan desain responsif.
-      Saya percaya bahwa teknologi harus menyederhanakan, bukan mempersulit.
+      Saya adalah pengembang web penuh semangat yang fokus pada pengembangan sistem modern berbasis kecerdasan buatan.
+      Setiap baris kode saya tulis dengan tujuan untuk menghadirkan efisiensi, keindahan, dan dampak nyata bagi pengguna.
+      Saya percaya masa depan web adalah kolaborasi antara manusia dan AI — dan saya sedang membangunnya.
     </p>
   </section>
 
-  <section id="skills" class="section dark">
-    <h2>Keahlian</h2>
+  <!-- Skills -->
+  <section id="skills" class="section skills dark">
+    <div class="section-title">
+      <h2>Keahlian</h2>
+    </div>
     <div class="skills-grid">
-      <div class="skill">HTML5 / CSS3 / JavaScript</div>
-      <div class="skill">Python (Flask, AI Integration)</div>
-      <div class="skill">Laravel / PHP</div>
-      <div class="skill">RESTful API & OpenAI API</div>
-      <div class="skill">Database (MySQL, SQLite)</div>
-      <div class="skill">UI/UX Design & Frontend Architecture</div>
+      <div class="skill-card"><span>HTML5 / CSS3 / JS (ES6+)</span></div>
+      <div class="skill-card"><span>Python (Flask, AI Integration)</span></div>
+      <div class="skill-card"><span>Laravel / PHP</span></div>
+      <div class="skill-card"><span>RESTful API & OpenAI API</span></div>
+      <div class="skill-card"><span>Database (MySQL, SQLite)</span></div>
+      <div class="skill-card"><span>UI/UX Design & Frontend Architecture</span></div>
     </div>
   </section>
 
-  <section id="portfolio" class="section">
-    <h2>Proyek Unggulan</h2>
+  <!-- Portfolio -->
+  <section id="portfolio" class="section portfolio">
+    <div class="section-title">
+      <h2>Proyek Unggulan</h2>
+    </div>
     <div class="portfolio-grid">
-      <div class="project-card">
+      <div class="project-card neon">
         <h3>Chatbot TIMU</h3>
-        <p>Asisten AI Kampus berbasis Flask dan OpenAI API yang dapat memberikan rekomendasi jurusan dan menjawab pertanyaan akademik secara natural.</p>
+        <p>Asisten AI kampus berbasis Flask + Gemini API yang mampu memberi rekomendasi jurusan dan menjawab pertanyaan akademik secara natural.</p>
       </div>
-      <div class="project-card">
+      <div class="project-card neon">
         <h3>Sistem e-Payroll</h3>
-        <p>Aplikasi penggajian berbasis Laravel dengan multi-role login, slip PDF, dan perhitungan PPh21 sesuai regulasi Indonesia.</p>
+        <p>Aplikasi penggajian berbasis Laravel dengan multi-role login, slip PDF otomatis, dan perhitungan pajak PPh21 akurat.</p>
       </div>
-      <div class="project-card">
-        <h3>Website Pabrik Furniture</h3>
-        <p>Situs katalog produk furniture modern dengan halaman dinamis dari database dan desain responsif untuk promosi perusahaan.</p>
+      <div class="project-card neon">
+        <h3>Website Furniture</h3>
+        <p>Website dinamis untuk katalog produk furniture modern dengan integrasi database dan desain responsif berbasis brand identity.</p>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section dark">
-    <h2>Kontak</h2>
-    <p>Ingin bekerja sama atau berdiskusi proyek baru? Hubungi saya di bawah ini.</p>
+  <!-- Contact -->
+  <section id="contact" class="section contact dark">
+    <div class="section-title">
+      <h2>Kontak</h2>
+    </div>
+    <p>Ingin berdiskusi atau membangun sesuatu bersama? Mari berkolaborasi.</p>
     <div class="contact-links">
-      <a href="mailto:taofikfaoji@gmail.com" target="_blank">Email</a>
-      <a href="https://wa.me/6281234567890" target="_blank">WhatsApp</a>
-      <a href="https://github.com/taofikfaoji" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/taofikfaoji" target="_blank">LinkedIn</a>
+      <a href="mailto:taofikfaoji@gmail.com" target="_blank" class="glow-link">Email</a>
+      <a href="https://wa.me/6281234567890" target="_blank" class="glow-link">WhatsApp</a>
+      <a href="https://github.com/taofikfaoji" target="_blank" class="glow-link">GitHub</a>
+      <a href="https://www.linkedin.com/in/taofikfaoji" target="_blank" class="glow-link">LinkedIn</a>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Taofik Faoji. Dibangun dengan cinta dan sedikit logika.</p>
+    <p>© 2025 Taofik Faoji — Dibangun dengan <span class="heart">❤</span> dan logika futuristik.</p>
   </footer>
 
   <script src="script.js"></script>
